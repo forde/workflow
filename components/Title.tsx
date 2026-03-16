@@ -4,9 +4,13 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
-export default function Component({ children }: Props) {
+export default function Component({ children, ...rest }: Props) {
+  const { className, ...props } = rest;
   return (
-    <h2 className='max-w-xs m-0 text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50'>
+    <h2
+      className={`text-2xl font-semibold leading-10 tracking-tight ${className || ""}`}
+      {...props}
+    >
       {children}
     </h2>
   );

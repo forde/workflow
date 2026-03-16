@@ -20,3 +20,22 @@ export const formatDate = (dateString?: string) => {
     })
     .replace(/\//g, "-");
 };
+
+export const mrUrl = (storyId: string) =>
+  `https://codehub.digitalarsenal.net/nord-projects/nordprotect/frontend/nordprotect-website/-/merge_requests/?sort=created_date&state=all&search=${storyId}&first_page_size=20`;
+
+export const storyUrl = (storyId: string) =>
+  `https://nordsec.atlassian.net/browse/${storyId}`;
+
+export const isValidDate = (date: Date) => !isNaN(date.getTime());
+
+export const pretyDate = (dateStr: string) => {
+  const [day, month, year] = dateStr.split("-");
+  const date = new Date(Number(year), Number(month) - 1, Number(day));
+  if (!isValidDate(date)) return "";
+  return date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "2-digit",
+  });
+};
