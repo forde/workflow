@@ -17,5 +17,17 @@ model Item {
   createdAt  DateTime @default(now())
 }
 
-// pnpx prisma db push (to sycn chnmages to db)
-// pnpx prisma generate (to regenerate client)
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+}
+
+/**
+ * MIGRATION STEPS:
+ * pnpx prisma migrate diff --from-empty --to-schema prisma/schema.prisma --script > migration.sql
+ * turso db shell workflow < migration.sql
+ * pnpx prisma generate
+ */

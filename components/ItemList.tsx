@@ -7,6 +7,7 @@ import ItemListTabsContent from "./ItemList.TabsContent";
 import ItemListTabs from "./ItemList.Tabs";
 import ItemListTitle from "./ItemList.Title";
 import { tabs } from "@/lib/constants";
+import SignOutButton from "@/components/SignOutButton";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   items: ItemType[];
@@ -25,6 +26,7 @@ export default function ItemList({ items }: Props) {
       <div className='flex gap-5 items-center mb-5'>
         <AddItem />
         <ItemListTabs items={items} />
+        <SignOutButton />
       </div>
       <ItemListTitle activeTab={activeTab} items={items} />
       <ItemListTabsContent activeTab={activeTab} items={items} />
