@@ -4,7 +4,6 @@ import { type Item } from "@/lib/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BranchName from "./BranchName";
-import { badgeColors } from "@/lib/constants";
 import BadgeLink from "./BadgeLink";
 import { mrUrl, storyUrl, pretyDate } from "@/lib/utils";
 import StatusBadge from "./StatusBadge";
@@ -32,7 +31,7 @@ export default function ItemListItem({ item }: Props) {
             disabled={item.status === "development"}
           />
           <Editable item={item}>
-            <Badge className={`${badgeColors.green} w-16`}>
+            <Badge className='bg-green-950 text-green-300 w-16'>
               {item.points} point{item.points > 1 ? "s" : ""}
             </Badge>
           </Editable>

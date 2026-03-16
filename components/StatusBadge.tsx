@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { Item } from "@/lib/types";
-import { badgeColors } from "@/lib/constants";
 
 interface Props {
   item: Item;
@@ -10,13 +9,13 @@ export default function StatusBadge({ item }: Props) {
   const color = (() => {
     switch (item.status) {
       case "development":
-        return badgeColors.sky;
+        return "bg-sky-950 text-sky-300";
       case "review":
-        return badgeColors.amber;
+        return "bg-[#543a0a] text-amber-300";
       case "testing":
-        return badgeColors.pink;
+        return "bg-fuchsia-950 text-fuchsia-300";
       case "done":
-        return badgeColors.green;
+        return "bg-green-950 text-green-300";
       default:
         return "";
     }
@@ -24,7 +23,7 @@ export default function StatusBadge({ item }: Props) {
 
   return (
     <Badge variant='secondary' className={color}>
-      {item.status}
+      {item.status.toUpperCase()}
     </Badge>
   );
 }
