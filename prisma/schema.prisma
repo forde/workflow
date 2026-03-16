@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Item {
+  id        Int      @id @default(autoincrement())
+  branch    String
+  status    String
+  points    Int
+  board     String
+  createdAt DateTime @default(now())
+}
