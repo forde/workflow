@@ -17,9 +17,9 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 export default function ItemListItem({ item }: Props) {
   return (
     <Card>
-      <CardContent className='flex items-center justify-between gap-5 bg-card rounded-[12px]'>
-        <div className='flex items-center gap-5'>
-          <BranchName>{item.branch}</BranchName>
+      <CardContent className='flex items-center flex-wrap justify-between gap-5 bg-card rounded-[12px]'>
+        <div className='flex items-center gap-5 w-full lg:w-auto'>
+          <BranchName item={item} />
           <Editable item={item}>
             <StatusBadge item={item} />
           </Editable>

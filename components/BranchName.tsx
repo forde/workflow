@@ -4,19 +4,23 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Editable from "./Editable";
+import { Item } from "@/lib/types";
 
-export default function BranchName({ children }: { children: string }) {
+export default function BranchName({ item }: { item: Item }) {
   return (
     <div className='flex items-center gap-2'>
-      <StoryIcon />
+      <Editable item={item}>
+        <StoryIcon />
+      </Editable>
       <Tooltip>
         <TooltipTrigger
           className='cursor-pointer'
           onClick={async () => {
-            await navigator.clipboard.writeText(children);
+            await navigator.clipboard.writeText(item.branch);
           }}
         >
-          {children}
+          {item.branch}
         </TooltipTrigger>
         <TooltipContent>Click to copy branch name</TooltipContent>
       </Tooltip>

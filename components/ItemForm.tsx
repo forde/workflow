@@ -7,6 +7,7 @@ import { addItem, saveItem, deleteItem } from "@/app/actions";
 import Select from "@/components/Select";
 import Title from "./Title";
 import { useEffect } from "react";
+import { boards } from "@/lib/constants";
 
 interface Props {
   item?: Item;
@@ -76,13 +77,10 @@ export default function ItemForm({ item, onClose }: Props) {
               <Field>
                 <Select
                   id='board'
-                  defaultValue={item?.board || "marketing"}
+                  defaultValue={item?.board || boards[0].value}
                   name='board'
                   label='Board'
-                  items={[
-                    { label: "Marketing", value: "marketing" },
-                    { label: "Team One", value: "team-one" },
-                  ]}
+                  items={boards}
                 />
               </Field>
             </div>

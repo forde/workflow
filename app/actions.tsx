@@ -40,8 +40,7 @@ export async function saveItem(formData: FormData) {
       status,
       points,
       board,
-      //startedAt: formatDate(""),
-      //finishedAt: "",
+      finishedAt: status === "done" ? formatDate("") : "",
     },
   });
 

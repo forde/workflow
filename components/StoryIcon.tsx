@@ -1,6 +1,6 @@
 export default function StoryIcon() {
   return (
-    <svg width='20px' height='20px' viewBox='0 0 16 16'>
+    <svg width='24px' height='24px' viewBox='0 0 16 16'>
       <rect
         id='Rectangle-36'
         fill='#63BA3C'

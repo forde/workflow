@@ -7,6 +7,11 @@ export const tabs = [
   { value: "all", label: "All" },
 ];
 
+export const boards = [
+  { value: "marketing", label: "Marketing" },
+  { value: "team-one", label: "Team One" },
+];
+
 export const badgeColors = {
   blue: "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300",
   green: "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300",
