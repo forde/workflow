@@ -1,22 +1,10 @@
-/*import { type Item } from "@/lib/types";
+import { type Item } from "@/lib/types";
 import { jira } from "@/lib/jira";
 import data from "./data.json";
 import { prisma } from "@/lib/prisma";
-import { extractIssueKey } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { extractIssueKey, formatDate } from "@/lib/utils";
 
 const rawData: Item[] = [];
-
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString);
-  return date
-    .toLocaleDateString("en-GB", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    })
-    .replace(/\//g, "-");
-};
 
 const getTimestamps = async (key: string) => {
   try {
@@ -63,6 +51,13 @@ const getUpdatedData = async () => {
   );
 };
 
+const toDate = (dateStr: string): Date | string => {
+  if (!dateStr) return "";
+  const [day, month, year] = dateStr.trim().split("-");
+  const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+  return isNaN(date.getTime()) ? "" : date;
+};
+
 const importData = async () => {
   "use server";
   await prisma.item.createMany({
@@ -74,9 +69,10 @@ const importData = async () => {
       board: item.board || "",
       startedAt: item.startedAt || "",
       finishedAt: item.finishedAt || "",
+      createdAt: toDate(item.startedAt || ""),
     })),
   });
-};*/
+};
 
 export default function Import() {
   //console.log(data);

@@ -1,9 +1,9 @@
-import AddItem from "@/components/AddItem";
+import Items from "@/components/Items";
 
 export default function Home() {
   return (
     <main className='p-5'>
-      <AddItem />
+      <Items />
     </main>
   );
 }

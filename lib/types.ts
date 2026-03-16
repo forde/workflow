@@ -9,4 +9,10 @@ export interface Item {
   board: BoardType;
   startedAt: string;
   finishedAt: string;
+  createdAt: Date;
+}
+
+export interface Tab {
+  value: string;
+  label: string;
 }
