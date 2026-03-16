@@ -2,7 +2,7 @@ import Title from "@/components/Title";
 import { Tab } from "@/lib/types";
 import { type Item as ItemType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
-import { badgeColors, tabs } from "@/lib/constants";
+import { tabs } from "@/lib/constants";
 import useFilteredItems from "@/lib/hooks/useFilteredItems";
 
 interface Props {
@@ -31,10 +31,10 @@ export default function ItemListTitle({ activeTab, items }: Props) {
   return (
     <Title className='flex items-center gap-4 mb-5'>
       {labels[activeTab.value]}
-      <Badge variant='secondary' className={badgeColors.blue}>
+      <Badge variant='secondary'>
         {count} item{count > 1 ? "s" : ""}
       </Badge>
-      <Badge variant='secondary' className={badgeColors.green}>
+      <Badge variant='secondary'>
         {points} point{points > 1 ? "s" : ""}
       </Badge>
     </Title>

@@ -1,9 +1,9 @@
 export const tabs = [
+  { value: "in-progress", label: "In progress" },
   { value: "development", label: "Development" },
   { value: "review", label: "Review" },
   { value: "testing", label: "Testing" },
   { value: "done", label: "Done" },
-  { value: "in-progress", label: "In progress" },
   { value: "all", label: "All" },
 ];
 

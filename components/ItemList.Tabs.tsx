@@ -26,6 +26,7 @@ export default function ItemListTabs({ items }: Props) {
       number
     >,
   );
+
   return (
     <TabsList className='!h-[40px]'>
       {tabs.map((tab) => (
