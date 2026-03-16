@@ -1,4 +1,4 @@
-import { type Item } from "@/lib/types";
+/*import { type Item } from "@/lib/types";
 import { jira } from "@/lib/jira";
 import data from "./data.json";
 import { prisma } from "@/lib/prisma";
@@ -72,7 +72,7 @@ const importData = async () => {
       createdAt: toDate(item.startedAt || ""),
     })),
   });
-};
+};*/
 
 export default function Import() {
   //console.log(data);
