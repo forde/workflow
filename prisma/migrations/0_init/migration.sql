@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Item" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "branch" TEXT NOT NULL,
+    "status" TEXT NOT NULL,
+    "points" INTEGER NOT NULL,
+    "board" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+

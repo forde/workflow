@@ -1,11 +1,15 @@
-import { PrismaPg } from "@prisma/adapter-pg";
-import { PrismaClient } from "../prisma/generated/client";
+import { PrismaClient } from "@/generated/prisma/client";
+import { PrismaLibSql } from "@prisma/adapter-libsql";
+import path from "path";
 
-const pool = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
-const prisma = new PrismaClient({ adapter: pool });
+const dbPath = path.resolve(process.cwd(), "prisma/dev.db");
 
-const globalForPrisma = global as unknown as { prisma: typeof prisma };
+const adapter = new PrismaLibSql({
+  url: `file:${dbPath}`,
+});
+
+const globalForPrisma = globalThis as unknown as { prisma: PrismaClient };
+
+export const prisma = globalForPrisma.prisma || new PrismaClient({ adapter });
 
 if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
-
-export default prisma;

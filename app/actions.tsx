@@ -1,15 +1,20 @@
 "use server";
 import { ItemInterface } from "@/components/Item";
-import prisma from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
 
-export async function createItem(data: ItemInterface) {
+export async function addItem(formData: FormData) {
+  const branch = formData.get("branch") as string;
+  const status = formData.get("status") as ItemInterface["status"]; // Cast to your Enum type
+  const points = Number(formData.get("points"));
+  const board = formData.get("board") as ItemInterface["board"];
+
   await prisma.item.create({
     data: {
-      branch: data.branch,
-      status: data.status,
-      points: data.points,
-      board: data.board,
+      branch,
+      status,
+      points,
+      board,
     },
   });
 
