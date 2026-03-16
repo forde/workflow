@@ -1,14 +1,8 @@
 import { HTMLAttributes, ReactNode } from "react";
-
-export interface ItemInterface {
-  branch: string;
-  status: "development" | "review" | "testing" | "done";
-  points: number;
-  board: "marketing" | "team-one";
-}
+import { type Item } from "@/lib/types";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
-  item: ItemInterface;
+  item: Item;
 }
 
 export default function Item({ item }: Props) {

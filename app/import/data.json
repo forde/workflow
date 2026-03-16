@@ -1,0 +1,354 @@
+[
+    {
+        "branch": "IDP-2535/fix-missing-spaces-in-blog-banners",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "24-11-2025",
+        "finishedAt": "24-11-2025"
+    },
+    {
+        "branch": "IDP-2128/missing-alt-texts",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "24-11-2025",
+        "finishedAt": "25-11-2025"
+    },
+    {
+        "branch": "IDP-2849/extend-cookie-expiration-time",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "25-11-2025",
+        "finishedAt": "27-11-2025"
+    },
+    {
+        "branch": "IDP-2833/cyber-monday-campaign",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "25-11-2025",
+        "finishedAt": "27-11-2025"
+    },
+    {
+        "branch": "IDP-2918/fix-loader-animation",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "28-11-2025",
+        "finishedAt": "01-12-2025"
+    },
+    {
+        "branch": "IDP-2916/tracking-events-installation",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "01-12-2025",
+        "finishedAt": "01-12-2025"
+    },
+    {
+        "branch": "IDP-2864/christmas-campaign",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "04-12-2025",
+        "finishedAt": "09-12-2025"
+    },
+    {
+        "branch": "IDP-2905/key-takeaways-update",
+        "status": "done",
+        "board": "marketing",
+        "points": 2,
+        "startedAt": "12-12-2025",
+        "finishedAt": "12-12-2025"
+    },
+    {
+        "branch": "IDP-2567/page-speed-insights",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "12-11-2025",
+        "finishedAt": "11-12-2025"
+    },
+    {
+        "branch": "IDP-2800/expanded-section",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "27-11-2025",
+        "finishedAt": "04-12-2025"
+    },
+    {
+        "branch": "IDP-2978/remove-cs-badges",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "18-12-2025",
+        "finishedAt": "18-12-2025"
+    },
+    {
+        "branch": "IDP-3001/new-blog-image",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "19-12-2025",
+        "finishedAt": "19-12-2025"
+    },
+    {
+        "branch": "IDP-3020/christmas-promotion-details-update",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "19-12-2025",
+        "finishedAt": "19-12-2025"
+    },
+    {
+        "branch": "IDP-3022/small-url-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "19-12-2025",
+        "finishedAt": "19-12-2025"
+    },
+    {
+        "branch": "IDP-2710/3-lp-updates",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "15-12-2025",
+        "finishedAt": "18-12-2025"
+    },
+    {
+        "branch": "IDP-2974/fix-article-internal-links",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "19-12-2025",
+        "finishedAt": "19-12-2025"
+    },
+    {
+        "branch": "IDP-2919/popular-articles",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "22-12-2025",
+        "finishedAt": "22-12-2025"
+    },
+    {
+        "branch": "IDP-2985/dark-web-lp-update",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "30-12-2025",
+        "finishedAt": "30-12-2025"
+    },
+    {
+        "branch": "IDP-2713/military-lp",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "22-12-2025",
+        "finishedAt": "29-12-2025"
+    },
+    {
+        "branch": "IDP-2901/postcard-campaign",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "30-12-2025",
+        "finishedAt": "05-01-2026"
+    },
+    {
+        "branch": "IDP-3083/kim-cta-bug-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "09-01-2026",
+        "finishedAt": "09-01-2026"
+    },
+    {
+        "branch": "IDP-2708-cyber-insurance",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "07-01-2026",
+        "finishedAt": "16-01-2026"
+    },
+    {
+        "branch": "IDP-2659/scam-protection",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "26-01-2026",
+        "finishedAt": "27-01-2026"
+    },
+    {
+        "branch": "IDP-3093/kim-cta-hero-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "28-01-2026",
+        "finishedAt": "28-01-2026"
+    },
+    {
+        "branch": "DP-1944/short-term-loan-monitoring",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "19-01-2026",
+        "finishedAt": "23-01-2026"
+    },
+    {
+        "branch": "IDP-3108/new-sob-card",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "30-01-2026",
+        "finishedAt": "30-01-2026"
+    },
+    {
+        "branch": "IDP-1945/financial-account-monitoring-lp",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "21-01-2026",
+        "finishedAt": "23-01-2026"
+    },
+    {
+        "branch": "IDP-3207/scam-protection-restrictions",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "30-01-2026",
+        "finishedAt": "04-02-2026"
+    },
+    {
+        "branch": "IDP-1943/credit-lock-lp",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "23-01-2026",
+        "finishedAt": "27-01-2026"
+    },
+    {
+        "branch": "IDP-3075/new-feature-cards",
+        "status": "done",
+        "board": "marketing",
+        "points": 2,
+        "startedAt": "28-01-2026",
+        "finishedAt": "28-01-2026"
+    },
+    {
+        "branch": "IDP-3205/scam-protection-improvements",
+        "status": "done",
+        "board": "marketing",
+        "points": 2,
+        "startedAt": "",
+        "finishedAt": "04-02-2026"
+    },
+    {
+        "branch": "IDP-3212/DWM-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "03-02-2026",
+        "finishedAt": "04-02-2026"
+    },
+    {
+        "branch": "IDP-3236/promotion-details-update",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "10-02-2026",
+        "finishedAt": "10-02-2026"
+    },
+    {
+        "branch": "IDP-3248/dwm-link-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "11-02-2026",
+        "finishedAt": "11-02-2026"
+    },
+    {
+        "branch": "IDP-3242/logo-color-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "11-02-2026",
+        "finishedAt": "11-02-2026"
+    },
+    {
+        "branch": "IDP-3111/np-vs-aura",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "10-02-2026",
+        "finishedAt": "11-02-2026"
+    },
+    {
+        "branch": "IDP-3243/starter-plan",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "17-02-2026",
+        "finishedAt": "18-02-2026"
+    },
+    {
+        "branch": "IDP-3296/discount-percentage-update",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "20-02-2026",
+        "finishedAt": "20-02-2026"
+    },
+    {
+        "branch": "IDP-3225/scam-bundles-pricing",
+        "status": "done",
+        "board": "marketing",
+        "points": 3,
+        "startedAt": "02-03-2026",
+        "finishedAt": "05-03-2026"
+    },
+    {
+        "branch": "IDP-3251/tax-return-season-campaign",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "02-03-2026",
+        "finishedAt": "05-03-2026"
+    },
+    {
+        "branch": "IDP-2836/suze-orman-lp",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "19-02-2026",
+        "finishedAt": "05-03-2026"
+    },
+    {
+        "branch": "IDP-3117/identity-theft-protection-lp",
+        "status": "done",
+        "board": "marketing",
+        "points": 5,
+        "startedAt": "12-02-2026",
+        "finishedAt": "05-03-2026"
+    },
+    {
+        "branch": "IDP-3250/scam-protection-disclaimer",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "09-03-2026",
+        "finishedAt": "09-03-2026"
+    },
+    {
+        "branch": "IDP-3295/article-image-alt-fix",
+        "status": "done",
+        "board": "marketing",
+        "points": 1,
+        "startedAt": "13-03-2026",
+        "finishedAt": "13-03-2026"
+    }
+]

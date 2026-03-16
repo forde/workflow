@@ -8,10 +8,15 @@ datasource db {
 }
 
 model Item {
-  id        Int      @id @default(autoincrement())
-  branch    String
-  status    String
-  points    Int
-  board     String
-  createdAt DateTime @default(now())
+  id         String   @id @unique
+  branch     String
+  status     String
+  points     Int
+  board      String
+  startedAt  String
+  finishedAt String
+  createdAt  DateTime @default(now())
 }
+
+// pnpx prisma db push (to sycn chnmages to db)
+// pnpx prisma generate (to regenerate client)
