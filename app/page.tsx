@@ -7,9 +7,5 @@ export default async function Home() {
     orderBy: { createdAt: "desc" },
   })) as ItemType[];
 
-  return (
-    <main className='p-5'>
-      <ItemList items={items} />
-    </main>
-  );
+  return <main className='p-5'>{/*<ItemList items={items} />*/}</main>;
 }
